@@ -209,7 +209,7 @@ def get_all_data():
                 WHERE grades.grade_data = '2021-12-30' AND students.group_id = 1 AND grades.subject_id = 3
                 ORDER BY grades.grade_data DESC;'''
 
-    task_9 = ''' SELECT students.student_id, students.name, students.surname, subjects.subject_name
+    task_9 = ''' SELECT DISTINCT students.student_id, students.name, students.surname, subjects.subject_name
                 FROM students JOIN grades ON students.student_id = grades.student_id
                 JOIN subjects ON grades.subject_id = subjects.subject_id; '''
 
