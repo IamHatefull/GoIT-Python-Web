@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<h1>Add new contact</h1>
+<form action="#" method="post">
+  <div class="form-group">
+    <label for="name"></label>
+    <input type="text" maxlength="100" name="name" placeholder="Name">
+    <br>
+    <label for="phone"></label>
+    <input type="tel" maxlength="100" name="phone"  placeholder="Phone number">
+<br>
+    <label for="birthday"></label>
+    <input type="date"  maxlength="100" name="birthday">
+<br>
+    <label for="email"></label>
+    <input type="email"  name="email" placeholder="Email">
+<br>
+    <label for="address"></label>
+    <input maxlength="100" name="address" placeholder="Address">
+<br>
+    <button type="submit">Add</button>
+   </div>
+</form>
+<a href='{{url_for('about')}}'>
+  <button>Cancel</button>
+</a>
