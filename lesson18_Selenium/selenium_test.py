@@ -3,6 +3,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
+"""
+WebDriver drives a browser natively, as a user would, either locally or on a remote machine using the Selenium server, marks a leap forward in terms of browser automation.
+"""
+
 #Solution to avoid error: "Couldn't read tbsCertificate as SEQUENCE"
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -23,6 +27,7 @@ print(search)
 time.sleep(2)
 search.send_keys("business")
 search.send_keys(Keys.RETURN)
+
 
 main = driver.find_element(By.ID, "id-search-field")
 
