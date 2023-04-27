@@ -1,8 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import time
-
 
 def test_eight_components():
     #Solution to avoid error: "Couldn't read tbsCertificate as SEQUENCE"
