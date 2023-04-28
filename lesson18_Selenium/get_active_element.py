@@ -36,3 +36,4 @@ print(value)
 # Refresh the current page
 driver.refresh()
 
+driver.quit()
