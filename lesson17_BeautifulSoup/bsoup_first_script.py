@@ -9,5 +9,7 @@ response = requests.get(url)
 print(response)
 
 soup = BeautifulSoup(response.text, 'lxml')
-
 #print(soup)
+
+qoutes = soup.find_all('span')
+print(qoutes)
