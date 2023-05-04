@@ -11,5 +11,5 @@ print(response)
 soup = BeautifulSoup(response.text, 'lxml')
 #print(soup)
 
-qoutes = soup.find_all('span')
+qoutes = soup.find_all('span', class_ = 'text')
 print(qoutes)
