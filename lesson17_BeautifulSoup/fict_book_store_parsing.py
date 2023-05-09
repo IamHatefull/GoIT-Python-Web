@@ -15,6 +15,6 @@ soup = BeautifulSoup(response.text, 'lxml')
 books = soup.find_all('article', class_ = 'product_pod')
 
 titles = soup.find_all('h3')
-#print(titles)
+print(titles)
 for title in titles:
-    print(title.get_text())
+    print(title)
